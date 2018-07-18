@@ -128,12 +128,8 @@ public final class QueryUtils {
         // Create an empty ArrayList that we can start adding latestNews to
         ArrayList<LatestNews> latestNews = new ArrayList<>();
 
-        // Try to parse the USGUS_URL. If there's a problem with the way the JSON
-        // is formatted, a JSONException exception object will be thrown.
-        // Catch the exception so the app doesn't crash, and print the error message to the logs.
         try {
 
-            // TODO: Parse the response given by the USGUS_URL string and
             // build up a list of LatestNews objects with the corresponding data.
             JSONObject jsonresponse = new JSONObject(theguardianJSON);
             JSONArray featuresArray = jsonresponse.getJSONObject("response").getJSONArray("results");
