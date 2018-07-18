@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2016 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,5 +13,7 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">Quake Report</string>
+    <string name="app_name">Guardian Tech News</string>
+    <string name="nothingfound">No news could be found. :( \nServer may be temporarily unreachable.\nTry again later. </string>
+    <string name="nointernet">No or weak internet connection. Try the following: \n\t1. Disconnect and reconnect to an available wifi or mobile network.\n\t2. Try different networks.\n\t3. Reboot your device.</string>
 </resources>
