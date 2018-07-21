@@ -122,7 +122,7 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
         uriBuilder.appendQueryParameter("show-tags", "contributor");
         uriBuilder.appendQueryParameter("api-key", "2ff9a169-1cb4-4cef-8b37-754e3ed1607e");
 
-        // Return the completed uri `http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=10&minmag=minMagnitude&orderby=time
+        // Return the completed uri
         return new NewsLoader(this, uriBuilder.toString());
 
     }
