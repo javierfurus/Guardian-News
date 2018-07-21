@@ -1,6 +1,7 @@
 Guardian Tech News
 ========================================
 This app displays a set number of news from theGuardian website through its API. The user can decide on the number of news to be displayed, the topic and the order they should be sorted into.
+
 License
 ======================
 Copyright 2016 The Android Open Source Project, Inc.
