@@ -16,4 +16,40 @@
     <string name="app_name">Guardian Tech News</string>
     <string name="nothingfound">No news could be found. :( \nServer may be temporarily unreachable.\nTry again later. </string>
     <string name="nointernet">No or weak internet connection. Try the following: \n\t1. Disconnect and reconnect to an available wifi or mobile network.\n\t2. Try different networks.\n\t3. Reboot your device.</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">Newsfeed Settings</string>
+    <string name="settings_min_number_of_news">Number of News</string>
+    <string name="settings_min_number_of_news_key" translatable="false">min_magnitude</string>
+    <string name="settings_min_number_of_news_default_value" translatable="false">10</string>
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_relevance_value</string>
+
+    <!-- Label for order-by magnitude option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_relevance_label">Relevance</string>
+    <string name="settings_order_by_relevance_value" translatable="false">relevance</string>
+
+    <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
+
+    <!-- String for choose topic -->
+    <string name="settings_topic_label">Choose Topic</string>
+    <string name="settings_topic_key" translatable="false">section</string>
+    <string name="settings_topic_default" translatable="false">@string/settings_technology_value</string>
+
+    <!-- Label for technology topic -->
+    <string name="settings_technology_label">Technology</string>
+    <string name="settings_technology_value" translatable="false">technology</string>
+    <!-- Label for politics topic -->
+    <string name="settings_politics_label">Politics</string>
+    <string name="settings_politics_value" translatable="false">politics</string>
+    <!-- Label for apple topic -->
+    <string name="settings_news_label">News</string>
+    <string name="settings_news_value" translatable="false">news</string>
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_order_by_oldest_value">oldest</string>
+
+
 </resources>

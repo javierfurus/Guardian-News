@@ -33,8 +33,13 @@ public class NewsAdapter extends ArrayAdapter<LatestNews> {
         LatestNews currentLatestNews = getItem(position);
 
         //get thumbnail image from url
-        new DownloadImageTask((ImageView) listViewItem.findViewById(R.id.thumbnail_image))
-                .execute(currentLatestNews.getThumbnail());
+        if (currentLatestNews.getThumbnail() != null) {
+            new DownloadImageTask((ImageView) listViewItem.findViewById(R.id.thumbnail_image))
+                    .execute(currentLatestNews.getThumbnail());
+        } else {
+            ImageView nothumnbnail = (ImageView) listViewItem.findViewById(R.id.thumbnail_image);
+            nothumnbnail.setImageResource(R.drawable.nothumbnail);
+        }
 
         //get summary
         TextView summary = (TextView) listViewItem.findViewById(R.id.summary_text);

@@ -136,9 +136,12 @@ public final class QueryUtils {
             for (int i = 0; i < featuresArray.length(); i++) {
                 JSONObject currentNews = featuresArray.getJSONObject(i);
                 JSONArray tagsArray = currentNews.getJSONArray("tags");
-                JSONObject fields = currentNews.getJSONObject("fields");
+                JSONObject fields = null;
+                if (currentNews.has("fields")) {
+                    fields = currentNews.getJSONObject("fields");
+                }
                 // Extract the value for the key called "mag"
-                String thumbnail = fields.getString("thumbnail");
+                String thumbnail = null;
                 String place = currentNews.getString("webTitle");
                 String time = currentNews.getString("webPublicationDate");
                 String locationURL = currentNews.getString("webUrl");
@@ -147,6 +150,9 @@ public final class QueryUtils {
                 for (int k = 0; k < tagsArray.length(); k++) {
                     JSONObject authors = tagsArray.getJSONObject(k);
                     author = authors.getString("webTitle");
+                }
+                if (fields != null) {
+                    thumbnail = fields.getString("thumbnail");
                 }
 
 
